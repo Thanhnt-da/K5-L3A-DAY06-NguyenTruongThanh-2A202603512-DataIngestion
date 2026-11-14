@@ -357,11 +357,24 @@ def cmd_tune_hybrid(_args) -> None:
 
 
 def cmd_audit_sheets(args) -> None:
-    from .audit import build_round1
+    from .audit import build_round1, build_round2
     from .store import PgVectorStore
     load_dotenv(STARTER / ".env")
+    if args.round == 2:
+        summary = RESULTS / "summary_test.json"
+        if not summary.exists():
+            sys.exit("Run the test benchmark first: benchmark --split test --chosen <X>")
+        chosen = json.loads(summary.read_text(encoding="utf-8"))["chosen_before_test"]
+        path = RESULTS / "audit" / "audit_workbook_round2.xlsx"
+        if path.exists() and not args.overwrite:
+            sys.exit(f"{path.name} already exists (it may hold your labels). Use --overwrite to replace it.")
+        info = build_round2(path, read_jsonl(RESULTS / "traces_test.jsonl"), list(STRATEGIES), chosen)
+        print(f"Wrote {path.relative_to(STARTER)}")
+        print(f"  metadata: {info['metadata_rows']} rows ({info['metadata_reuse']} reuse rows to skip)")
+        print(f"  test grounding: {info['grounding_rows']} rows ({info['grounding_reuse']} reuse rows)")
+        return
     if args.round != 1:
-        sys.exit("Round 2 (metadata + test grounding) is generated after the test run.")
+        sys.exit("--round must be 1 or 2")
     tied = args.tied.split(",")
     traces = read_jsonl(RESULTS / "traces_dev.jsonl")
     pages = read_jsonl(RESULTS / "pages.jsonl")

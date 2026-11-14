@@ -1,0 +1,256 @@
+sheet,row_id,strategy,item,label,reason_or_notes,labeled_by
+coherence,coh001,A,c01,1,"Good idea, but cut mid sentence",human
+coherence,coh002,B,c01,2,Complete paragraph with good idea,human
+coherence,coh003,C,c01,2,Complete paragraph with good idea,human (via coh002)
+coherence,coh004,D,c01,2,full context,human
+coherence,coh005,E,c01,1,"Good idea, but cut mid sentence",human (via coh001)
+coherence,coh006,F,c01,2,Complete paragraph with good idea,human (via coh002)
+coherence,coh007,Z,c01,2,Complete paragraph with good idea,human (via coh002)
+coherence,coh008,A,c02,1,"Good , but cut off the conclusion",human
+coherence,coh009,B,c02,2,Very good  coherance,human
+coherence,coh010,C,c02,2,Very good  coherance,human (via coh009)
+coherence,coh011,D,c02,2,Very good  coherance,human (via coh009)
+coherence,coh012,E,c02,1,"Good , but cut off the conclusion",human (via coh008)
+coherence,coh013,F,c02,2,Very good  coherance,human (via coh009)
+coherence,coh014,Z,c02,2,Full context,human
+coherence,coh015,A,c03,2,"The idea intact, even though the supporting example got cut.",human
+coherence,coh016,B,c03,2,"More context, might help understanding",human
+coherence,coh017,C,c03,2,"More context, might help understanding",human (via coh016)
+coherence,coh018,D,c03,2,Full context,human
+coherence,coh019,E,c03,2,"The idea intact, even though the supporting example got cut.",human (via coh015)
+coherence,coh020,F,c03,2,"More context, might help understanding",human (via coh016)
+coherence,coh021,Z,c03,2,"More context, might help understanding",human (via coh016)
+coherence,coh022,A,c04,2,This idea is containing in the chunk,human
+coherence,coh023,B,c04,2,"Better understanding, but the idea is contained in the first few sentence of the chunk.",human
+coherence,coh024,C,c04,2,"Better understanding, but the idea is contained in the first few sentence of the chunk.",human (via coh023)
+coherence,coh025,D,c04,2,The absolute idea inside one chunk.,human
+coherence,coh026,E,c04,0,"a Bunch of setup with no conclusion, the chunk also has some sentence from another idea that was cut-off",human
+coherence,coh027,F,c04,2,"Better understanding, but the idea is contained in the first few sentence of the chunk.",human (via coh023)
+coherence,coh028,Z,c04,2,"Better understanding, but the idea is contained in the first few sentence of the chunk.",human (via coh023)
+coherence,coh029,A,c05,1,"Self contained idea, only the proof is cut off",human
+coherence,coh030,B,c05,2,"Self contained idea, now with full proof, adding to coherance",human
+coherence,coh031,C,c05,2,"Self contained idea, now with full proof, adding to coherance",human (via coh030)
+coherence,coh032,D,c05,2,"self contained idea, though there is no proof, for the chunk it self is coherance enough",human
+coherence,coh033,E,c05,1,"Self contained idea, only the proof is cut off",human (via coh029)
+coherence,coh034,F,c05,2,"Self contained idea, now with full proof, adding to coherance",human (via coh030)
+coherence,coh035,Z,c05,2,full context,human
+coherence,coh036,A,c06,1,"one idea is full, but the second idea is cut-off",human
+coherence,coh037,B,c06,2,Full paragraph makes it easy to read,human
+coherence,coh038,C,c06,2,Full paragraph makes it easy to read,human (via coh037)
+coherence,coh039,D,c06,0,"the cut-off part suggesting more to the idea, making it less coherance",human
+coherence,coh040,E,c06,1,"one idea is full, but the second idea is cut-off",human (via coh036)
+coherence,coh041,F,c06,2,Full paragraph makes it easy to read,human (via coh037)
+coherence,coh042,Z,c06,2,Full paragraph makes it easy to read,human (via coh037)
+coherence,coh043,A,c07,1,cut off,human
+coherence,coh044,B,c07,1,"cut off, but more context for coherance",human
+coherence,coh045,C,c07,1,"cut off, but more context for coherance",human (via coh044)
+coherence,coh046,D,c07,0,Cut off,human
+coherence,coh047,E,c07,1,cut off,human (via coh043)
+coherence,coh048,F,c07,1,"cut off, but more context for coherance",human (via coh044)
+coherence,coh049,Z,c07,2,Full context,human
+coherence,coh050,A,c08,2,Full context,human
+coherence,coh051,B,c08,2,Full context,human (via coh050)
+coherence,coh052,C,c08,2,Full context,human (via coh050)
+coherence,coh053,D,c08,2,Full context,human (via coh050)
+coherence,coh054,E,c08,2,Full context,human (via coh050)
+coherence,coh055,F,c08,2,Full context,human (via coh050)
+coherence,coh056,Z,c08,1,Full context,human
+coherence,coh057,A,c09,1,full context,human
+coherence,coh058,B,c09,2,full context now with actual explanation,human
+coherence,coh059,C,c09,2,full context now with actual explanation,human (via coh058)
+coherence,coh060,D,c09,0,"The idea is setup, but the actual conclusion is cut off, its in the next part",human
+coherence,coh061,E,c09,1,full context,human (via coh057)
+coherence,coh062,F,c09,2,full context now with actual explanation,human (via coh058)
+coherence,coh063,Z,c09,2,full context,human
+coherence,coh064,A,c10,1,Less coherance,human
+coherence,coh065,B,c10,2,better coherance because long chunk,human
+coherence,coh066,C,c10,2,better coherance because long chunk,human (via coh065)
+coherence,coh067,D,c10,0,This chunk idea got cut-off,human
+coherence,coh068,E,c10,1,Less coherance,human (via coh064)
+coherence,coh069,F,c10,2,better coherance because long chunk,human (via coh065)
+coherence,coh070,Z,c10,2,better coherance because long chunk,human (via coh065)
+grounding_dev,grd001,C,q01,2,Full context,human
+grounding_dev,grd002,F,q01,2,Full context,human
+grounding_dev,grd003,Z,q01,2,Full context,human
+grounding_dev,grd004,C,q02,2,Full context,human
+grounding_dev,grd005,F,q02,2,Full context,human
+grounding_dev,grd006,Z,q02,2,Full context,human (via grd004)
+grounding_dev,grd007,C,q03,2,Full context,human
+grounding_dev,grd008,F,q03,2,Full context,human
+grounding_dev,grd009,Z,q03,2,Full context,human
+grounding_dev,grd010,C,q04,2,Full context,human
+grounding_dev,grd011,F,q04,2,Full context,human (via grd010)
+grounding_dev,grd012,Z,q04,2,Full context,human (via grd010)
+grounding_dev,grd013,C,q05,2,Full context,human
+grounding_dev,grd014,F,q05,2,Full context,human
+grounding_dev,grd015,Z,q05,2,Full context,human
+grounding_dev,grd016,C,q06,2,Full context,human
+grounding_dev,grd017,F,q06,2,Full context,human (via grd016)
+grounding_dev,grd018,Z,q06,2,Full context,human (via grd016)
+grounding_dev,grd019,C,q07,2,Full context,human
+grounding_dev,grd020,F,q07,2,Full context,human
+grounding_dev,grd021,Z,q07,2,Full context,human
+grounding_dev,grd022,C,q08,2,Full context,human
+grounding_dev,grd023,F,q08,2,Full context,human
+grounding_dev,grd024,Z,q08,2,Full context,human
+grounding_dev,grd025,C,q09,2,Full context,human
+grounding_dev,grd026,F,q09,2,Full context,human
+grounding_dev,grd027,Z,q09,2,Full context,human (via grd025)
+grounding_dev,grd028,C,q10,2,Full context,human
+grounding_dev,grd029,F,q10,2,Full context,human
+grounding_dev,grd030,Z,q10,2,Full context,human
+grounding_dev,grd031,C,q11,2,Full context,human
+grounding_dev,grd032,F,q11,2,Full context,human (via grd031)
+grounding_dev,grd033,Z,q11,2,Full context,human (via grd031)
+grounding_dev,grd034,C,q12,2,Full context,human
+grounding_dev,grd035,F,q12,2,Full context,human
+grounding_dev,grd036,Z,q12,2,Full context,human
+grounding_dev,grd037,C,q13,2,Full context,human
+grounding_dev,grd038,F,q13,2,Full context,human
+grounding_dev,grd039,Z,q13,2,Full context,human
+grounding_dev,grd040,C,q14,2,Full context,human
+grounding_dev,grd041,F,q14,2,Full context,human
+grounding_dev,grd042,Z,q14,2,Full context,human (via grd040)
+grounding_dev,grd043,C,q15,2,Full context,human
+grounding_dev,grd044,F,q15,2,Full context,human (via grd043)
+grounding_dev,grd045,Z,q15,2,Full context,human
+metadata,met001,A,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met002,A,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met003,A,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met004,B,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met005,B,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met006,B,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met007,C,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met008,C,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met009,C,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met010,D,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met011,D,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met012,D,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met013,E,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met014,E,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met015,E,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met016,F,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met017,F,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met018,F,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met019,Z,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met020,Z,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met021,Z,q16,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met022,A,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met023,A,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met024,A,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met025,B,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met026,B,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met027,B,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met028,C,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met029,C,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met030,C,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met031,D,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met032,D,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met033,D,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met034,E,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met035,E,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met036,E,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met037,F,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met038,F,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met039,F,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met040,Z,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met041,Z,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met042,Z,q17,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met043,A,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met044,A,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met045,A,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met046,B,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met047,B,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met048,B,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met049,C,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met050,C,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met051,C,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met052,D,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met053,D,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met054,D,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met055,E,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met056,E,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met057,E,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met058,F,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met059,F,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met060,F,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met061,Z,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",SCRIPT DISAGREES with human page_ok=✅: range wider than text: does not start on page 341 - author to review,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met062,Z,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met063,Z,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met064,A,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met065,A,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met066,A,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met067,B,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met068,B,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met069,B,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met070,C,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met071,C,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met072,C,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met073,D,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met074,D,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met075,D,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met076,E,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met077,E,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met078,E,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met079,F,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met080,F,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met081,F,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met082,Z,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met083,Z,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met084,Z,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met085,A,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met086,A,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met087,A,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met088,B,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met089,B,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met090,B,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met091,C,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met092,C,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met093,C,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met094,D,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: script; chapter_ok/section_ok: script (pypdf)
+metadata,met095,D,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met096,D,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met097,E,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met098,E,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met099,E,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met100,F,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met101,F,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met102,F,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met103,Z,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met104,Z,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met105,Z,q20,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
+grounding_test,grt001,A,q16,2,A: chunk 1 holds the full Davis-Moore quote; chunk 3 adds the skill/incentive argument.,Claude (LLM judge)
+grounding_test,grt002,B,q16,2,B: chunk 2 holds the full quote; chunk 1 adds that skill required determines importance.,Claude (LLM judge)
+grounding_test,grt003,C,q16,2,B: chunk 2 holds the full quote; chunk 1 adds that skill required determines importance.,Claude (LLM judge)
+grounding_test,grt004,D,q16,2,D: chunk 1 holds the full quote plus 'qualified people are rewarded more'; chunk 2 adds the incentive.,Claude (LLM judge)
+grounding_test,grt005,E,q16,2,E: chunk 1 holds the full quote; chunk 2 adds incentive and skill.,Claude (LLM judge)
+grounding_test,grt006,F,q16,2,"F: same evidence as B (full quote + skill), third chunk is another Davis-Moore paragraph.",Claude (LLM judge)
+grounding_test,grt007,Z,q16,2,B: chunk 2 holds the full quote; chunk 1 adds that skill required determines importance.,Claude (LLM judge)
+grounding_test,grt008,A,q17,2,A: chunk 1 contains the full 50% / 80% statistic with its regions and source (Chen 2001).,Claude (LLM judge)
+grounding_test,grt009,B,q17,2,B: chunk 1 defines the underground economy and gives the full 50% / 80% statistic.,Claude (LLM judge)
+grounding_test,grt010,C,q17,2,B: chunk 1 defines the underground economy and gives the full 50% / 80% statistic.,Claude (LLM judge)
+grounding_test,grt011,D,q17,2,D: chunk 1 is exactly the statistic sentence; definition is in chunk 2's neighbour but the numbers and regions suffice.,Claude (LLM judge)
+grounding_test,grt012,E,q17,2,E: chunk 1 contains the definition and the full statistic.,Claude (LLM judge)
+grounding_test,grt013,F,q17,2,F: same rank-1 chunk as B with definition and full statistic.,Claude (LLM judge)
+grounding_test,grt014,Z,q17,2,Z: same rank-1 chunk as B with definition and full statistic.,Claude (LLM judge)
+grounding_test,grt015,A,q18,1,A: chunk 1 has the redlining definition but is cut inside the sedimentation definition ('while sedimentat...'); the intergenerational/wealth part is missing from all 3 chunks.,Claude (LLM judge)
+grounding_test,grt016,B,q18,2,B: chunk 1 contains both definitions in full.,Claude (LLM judge)
+grounding_test,grt017,C,q18,2,B: chunk 1 contains both definitions in full.,Claude (LLM judge)
+grounding_test,grt018,D,q18,2,D: chunk 1 is exactly the two definitions; chunk 2 links redlining to Ferguson.,Claude (LLM judge)
+grounding_test,grt019,E,q18,2,E: chunk 1 contains both definitions in full; chunk 2 adds the Ferguson context.,Claude (LLM judge)
+grounding_test,grt020,F,q18,2,F: same rank-1 chunk as B with both definitions.,Claude (LLM judge)
+grounding_test,grt021,Z,q18,2,Z: same text as B's rank-1 chunk (both definitions); note its stored range p341-342 is wider than the text (only on p342).,Claude (LLM judge)
+grounding_test,grt022,A,q19,2,"A: evidence is split across chunks 2 and 3 (chunk 2 starts mid-sentence 'e same education...'), but read together they give the childless-women parity and the 7.9% / 8.6% figures. Auto hit@3 = 0 disagrees because no single chunk holds the whole quote.",Claude (LLM judge)
+grounding_test,grt023,B,q19,2,B: chunk 1 gives the motherhood explanation and the full 7.9% / 8.6% statistic.,Claude (LLM judge)
+grounding_test,grt024,C,q19,2,B: chunk 1 gives the motherhood explanation and the full 7.9% / 8.6% statistic.,Claude (LLM judge)
+grounding_test,grt025,D,q19,2,D: chunk 1 contains the full comparison of childless women and mothers.,Claude (LLM judge)
+grounding_test,grt026,E,q19,2,E: chunk 1 contains the full comparison and figures.,Claude (LLM judge)
+grounding_test,grt027,F,q19,2,"F: same rank-1 chunk as B; third chunk (feminization of poverty, ch. 9) is off-topic but harmless.",Claude (LLM judge)
+grounding_test,grt028,Z,q19,2,Z: same rank-1 chunk as B with the full comparison.,Claude (LLM judge)
+grounding_test,grt029,A,q20,1,A: chunk 3 starts mid-sentence 'le of the proletariat...': it keeps the dependence-on-wages reason but loses Engels and the household owner-worker framing; chunks 1-2 are chapter 9 Marx text.,Claude (LLM judge)
+grounding_test,grt030,B,q20,2,"B: chunk 3 (p391) holds the full Engels passage; chunks 1-2 are off-filter chapter 9 Marx text, but the evidence is present and traceable.",Claude (LLM judge)
+grounding_test,grt031,C,q20,2,C: the chapter filter puts the full Engels passage at rank 1; the other two chunks are chapter 12 conflict theory.,Claude (LLM judge)
+grounding_test,grt032,D,q20,0,"D: all 3 chunks are chapter 9 Marx/class conflict text (p288); nothing about women, the household or Engels.",Claude (LLM judge)
+grounding_test,grt033,E,q20,2,E: chunk 2 contains the full Engels passage; chunks 1 and 3 are chapter 9.,Claude (LLM judge)
+grounding_test,grt034,F,q20,2,F: chunk 2 contains the full Engels passage; chunks 1 and 3 are chapter 9.,Claude (LLM judge)
+grounding_test,grt035,Z,q20,2,"B: chunk 3 (p391) holds the full Engels passage; chunks 1-2 are off-filter chapter 9 Marx text, but the evidence is present and traceable.",Claude (LLM judge)

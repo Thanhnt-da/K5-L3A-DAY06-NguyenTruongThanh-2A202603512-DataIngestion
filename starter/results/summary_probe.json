@@ -1,0 +1,175 @@
+{
+  "split": "probe",
+  "questions": 4,
+  "model": "text-embedding-3-small",
+  "chosen_before_test": null,
+  "api_tokens": 104,
+  "hybrid_vector_weight": 0.75,
+  "hybrid_weight_source": "tuned on dev",
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "chunk_size": 500,
+      "overlap": 50,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "baseline"
+    },
+    "B": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "A (split rule + size)"
+    },
+    "C": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": true,
+      "compare": "B (metadata filter)"
+    },
+    "D": {
+      "chunking": "paragraph",
+      "chunk_size": 500,
+      "overlap": 0,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "A (split rule, same size) and B (size, same rule)"
+    },
+    "E": {
+      "chunking": "fixed",
+      "chunk_size": 500,
+      "overlap": 150,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "A (overlap 50 -> 150)"
+    },
+    "F": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "page",
+      "search": "hybrid",
+      "use_filter": false,
+      "compare": "B (hybrid vector + keyword search)"
+    },
+    "Z": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "section",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "B (chunks may cross page breaks; page range metadata)"
+    }
+  },
+  "summary": [
+    {
+      "strategy": "A",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "page_hit_at_3": 3,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "0/4",
+      "hit_at_3_str": "0/4",
+      "filter_compliance_str": "N/A"
+    },
+    {
+      "strategy": "B",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "page_hit_at_3": 4,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "0/4",
+      "hit_at_3_str": "0/4",
+      "filter_compliance_str": "N/A"
+    },
+    {
+      "strategy": "C",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "page_hit_at_3": 4,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "0/4",
+      "hit_at_3_str": "0/4",
+      "filter_compliance_str": "N/A"
+    },
+    {
+      "strategy": "D",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "page_hit_at_3": 4,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "0/4",
+      "hit_at_3_str": "0/4",
+      "filter_compliance_str": "N/A"
+    },
+    {
+      "strategy": "E",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "page_hit_at_3": 3,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "0/4",
+      "hit_at_3_str": "0/4",
+      "filter_compliance_str": "N/A"
+    },
+    {
+      "strategy": "F",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 0,
+      "hit_at_3": 0,
+      "page_hit_at_3": 4,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "0/4",
+      "hit_at_3_str": "0/4",
+      "filter_compliance_str": "N/A"
+    },
+    {
+      "strategy": "Z",
+      "split": "probe",
+      "n": 4,
+      "hit_at_1": 3,
+      "hit_at_3": 4,
+      "page_hit_at_3": 4,
+      "filter_questions": 0,
+      "filter_compliant": 0,
+      "hit_at_1_str": "3/4",
+      "hit_at_3_str": "4/4",
+      "filter_compliance_str": "N/A"
+    }
+  ],
+  "python": "3.14.7",
+  "libraries": {
+    "openai": "3.50.0",
+    "psycopg": "3.3.8",
+    "pymupdf": "2.1",
+    "python-dotenv": "1.2.4"
+  },
+  "run_at": "2026-11-14T04:43:19+00:00"
+}

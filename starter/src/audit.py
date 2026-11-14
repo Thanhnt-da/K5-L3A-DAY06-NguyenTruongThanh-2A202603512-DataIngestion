@@ -106,11 +106,22 @@ def _validate(ws, col_letter: str, options: str, prompt: str) -> None:
     dv.add(f"{col_letter}3:{col_letter}{max(ws.max_row, 3)}")
 
 
-def _guide(wb: Workbook, round_no: int, anchor_rule: str, tied: list[str]) -> None:
+def _write_guide(wb: Workbook, rows: list[tuple[str, str]]) -> None:
     ws = wb.active
     ws.title = "0_Guide"
     ws.column_dimensions["A"].width = 26
     ws.column_dimensions["B"].width = 110
+    for a, b in rows:
+        ws.append([a, b])
+    for row in ws.iter_rows():
+        for cell in row:
+            cell.alignment = WRAP
+        if row[0].value and not str(row[0].value).startswith("  "):
+            row[0].font = Font(bold=True)
+    ws["A1"].font = Font(bold=True, size=14)
+
+
+def _guide(wb: Workbook, round_no: int, anchor_rule: str, tied: list[str]) -> None:
     rows = [
         ("AUDIT WORKBOOK", f"Round {round_no} - manual labels by the author (human judgement; possible author bias)."),
         ("Colours", "GREY = filled by script, do not edit.  YELLOW = you fill.  GREEN row = reuse: identical text to "
@@ -142,14 +153,7 @@ def _guide(wb: Workbook, round_no: int, anchor_rule: str, tied: list[str]) -> No
                            "(this sheet), then fewer chunks / lower cost."),
         ("When done", "Save the file and tell Claude 'audit round 1 done'. Empty cells are reported, never guessed."),
     ]
-    for a, b in rows:
-        ws.append([a, b])
-    for row in ws.iter_rows():
-        for cell in row:
-            cell.alignment = WRAP
-        if row[0].value and not str(row[0].value).startswith("  "):
-            row[0].font = Font(bold=True)
-    ws["A1"].font = Font(bold=True, size=14)
+    _write_guide(wb, rows)
 
 
 def _progress(wb: Workbook, sheets: list[tuple[str, str, str, list[str]]]) -> None:
@@ -257,3 +261,142 @@ def build_round1(path: Path, pages: list[dict], chunks_by_strategy: dict[str, li
     reuse_g = sum(1 for r in ws2.iter_rows(min_row=3, values_only=True) if r[13])
     return {"anchors": anchors, "coherence_rows": n, "coherence_reuse": reuse_c,
             "grounding_rows": m, "grounding_reuse": reuse_g, "anchor_rule": anchor_rule}
+
+
+# ------------------------------------------------------------------ round 2
+CHECK = "✅,❌,?"
+METADATA_RUBRIC = ("For each retrieved chunk, open the PDF at pdf_page (Z: the whole page range) and check:\n"
+                   "page_ok: the chunk text really is on that page (range).  chapter_ok / section_ok: the stored "
+                   "chapter / section number + title are right.  ✅ correct  ❌ wrong  ? cannot tell")
+
+
+def _hit_cell(h: dict) -> str:
+    rng = f"{h['page']}-{h['page_end']}" if h["page_end"] != h["page"] else str(h["page"])
+    return f"[p{rng} | {h['section']} | score {h['score']:.3f}]\n{h['text']}"
+
+
+def _ref(col: str, row: int | None):
+    return f'=IF({col}{row}="","",{col}{row})' if row else None
+
+
+def build_round2(path: Path, test_traces: list[dict], strategy_order: list[str], chosen: str) -> dict:
+    wb = Workbook()
+    _write_guide(wb, [
+        ("AUDIT WORKBOOK", f"Round 2 - TEST questions (strategy chosen before test: {chosen}). Manual labels by "
+                           "the author (human judgement; possible author bias)."),
+        ("Colours", "GREY = filled by script, do not edit.  YELLOW = you fill.  GREEN row = reuse: the same chunk "
+                    "(metadata) or the same top-3 (grounding) as an earlier row; it shows that row's labels "
+                    "automatically - you may skip it."),
+        ("How to fill", "Use the dropdowns and add a short note/reason. Do not rename sheets or columns. Sorting "
+                        "and filtering rows is fine. Save as .xlsx."),
+        ("PDF navigation", "pdf_page = page to type in your PDF viewer. book_page = number printed on the page."),
+        ("", ""),
+        ("1_Metadata", "Is the metadata attached to each retrieved chunk TRUE? (5 test questions x top-3)"),
+        ("  page_ok", "✅ the chunk text is on pdf_page (for Z: starts on pdf_page and ends on page_end). "
+                      "❌ it is on another page.  ? cannot tell."),
+        ("  chapter_ok", "✅ the chunk is in the stored chapter.  ❌ wrong chapter."),
+        ("  section_ok", "✅ stored section number AND section_title match the PDF heading for that text.  ❌ wrong."),
+        ("  auto_in_filter", "Script: does the chunk satisfy the question's filter (only q20 has one). Metadata can "
+                             "be CORRECT while the search ignored the filter - those are different findings."),
+        ("  notes", "Describe every ❌: what is stored vs what the PDF shows."),
+        ("", ""),
+        ("2_Grounding_test", "Read the 3 retrieved chunks TOGETHER (5 test questions x 7 strategies)."),
+        ("  Score 0", "No evidence for the expected answer anywhere in the top-3."),
+        ("  Score 1", "Evidence present, but a needed condition/context is missing."),
+        ("  Score 2", "Enough to answer correctly AND trace it to the source page."),
+        ("  Note", "Judges retrieved evidence, not an LLM answer. auto_hit@3 may disagree - explain it."),
+        ("", ""),
+        ("3_Notes", "Short answers the report needs: one metadata field that HELPED (tracing or filtering) and "
+                    "one LIMITATION. Optional: anything surprising."),
+        ("When done", "Save the file and tell Claude 'audit round 2 done'. Empty cells are reported, never guessed."),
+    ])
+    ordered = sorted(test_traces, key=lambda t: (t["id"], strategy_order.index(t["strategy"])))
+
+    # ---- metadata
+    ws = wb.create_sheet("1_Metadata")
+    cols = [("row_id", 9, "auto", ""), ("qid", 6, "auto", ""), ("strategy", 8, "auto", ""), ("rank", 5, "auto", ""),
+            ("question_filter", 10, "auto", "Filter given by the question context (if any)."),
+            ("chunk_id", 22, "auto", ""), ("pdf_page", 7, "auto", "Type in your PDF viewer."),
+            ("page_end", 7, "auto", "Last page (differs only for Z multi-page chunks)."),
+            ("book_page", 8, "auto", "Printed page(s)."), ("chapter", 7, "auto", ""), ("section", 7, "auto", ""),
+            ("section_title", 24, "auto", ""), ("chunk_text", 70, "auto", "Find this text in the PDF."),
+            ("auto_in_filter", 8, "auto", "Script check vs the question filter."),
+            ("reuse_of", 10, "auto", "Same chunk as that row: its labels are shown automatically."),
+            ("page_ok", 8, "input", METADATA_RUBRIC), ("chapter_ok", 9, "input", METADATA_RUBRIC),
+            ("section_ok", 9, "input", METADATA_RUBRIC), ("notes", 40, "input", "Explain every ❌.")]
+    _header(ws, cols, "METADATA - is the stored page / chapter / section TRUE for each retrieved chunk?\n"
+            + METADATA_RUBRIC + "\nGreen rows repeat a chunk already listed: skip them.")
+    seen: dict[tuple, int] = {}
+    n = 0
+    for t in ordered:
+        for h in t["hits"]:
+            n += 1
+            row = ws.max_row + 1
+            key = (h["text"], h["page"], h["page_end"], h["chapter"], h["section"])
+            reuse = seen.get(key)
+            span = h["page_end"] - h["page"]
+            book = f"{h['printed_page']}-{h['printed_page'] + span}" if span else str(h["printed_page"])
+            match = h["matches_question_filter"]
+            in_f = "" if match is None else ("✅" if match else "❌")
+            ws.append([f"met{n:03d}", t["id"], t["strategy"], h["rank"],
+                       json.dumps(t["question_filter"]) if t["question_filter"] else "", h["chunk_id"],
+                       h["page"], h["page_end"], book, h["chapter"], h["section"], h["section_title"], h["text"],
+                       in_f, f"met{reuse - 2:03d}" if reuse else None,
+                       _ref("P", reuse), _ref("Q", reuse), _ref("R", reuse), _ref("S", reuse)])
+            seen.setdefault(key, row)
+    _style_rows(ws, cols, "reuse_of")
+    for col in "PQR":
+        _validate(ws, col, CHECK, "✅ correct / ❌ wrong / ? unsure")
+
+    # ---- test grounding
+    ws2 = wb.create_sheet("2_Grounding_test")
+    gcols = [("row_id", 9, "auto", ""), ("qid", 6, "auto", ""), ("strategy", 8, "auto", ""),
+             ("question", 35, "auto", ""), ("expected_answer", 28, "auto", ""),
+             ("gold_page", 8, "auto", ""), ("evidence_quote", 40, "auto", ""),
+             ("filter_applied", 10, "auto", "Filter actually used by this strategy."),
+             ("auto_hit@1", 7, "auto", ""), ("auto_hit@3", 7, "auto", ""),
+             ("chunk_1", 60, "auto", "rank 1"), ("chunk_2", 60, "auto", "rank 2"), ("chunk_3", 60, "auto", "rank 3"),
+             ("reuse_of", 10, "auto", "Same top-3 text as that row."),
+             ("score", 8, "input", GROUNDING_RUBRIC), ("reason", 45, "input", "One line: why this score.")]
+    _header(ws2, gcols, "GROUNDING (test) - do the 3 chunks TOGETHER give enough evidence?\n" + GROUNDING_RUBRIC
+            + "\nGreen rows have the same top-3 text as an earlier row: skip them.")
+    seen_g: dict[tuple, int] = {}
+    m = 0
+    for t in ordered:
+        m += 1
+        row = ws2.max_row + 1
+        cells = [_hit_cell(h) for h in t["hits"]] + [""] * (3 - len(t["hits"]))
+        key = (t["id"], tuple(cells))  # same text AND same page range/section shown
+        reuse = seen_g.get(key)
+        ws2.append([f"grt{m:03d}", t["id"], t["strategy"], t["question"], t["expected_answer"],
+                    str(t["gold"][0]["page"]), t["gold"][0]["evidence_quote"],
+                    json.dumps(t["filter_applied"]) if t["filter_applied"] else "",
+                    int(t["hit_at_1"]), int(t["hit_at_3"]), *cells, f"grt{reuse - 2:03d}" if reuse else None,
+                    _ref("O", reuse), _ref("P", reuse)])
+        seen_g.setdefault(key, row)
+    _style_rows(ws2, gcols, "reuse_of")
+    _validate(ws2, "O", "0,1,2", "0 none / 1 partial / 2 enough")
+
+    # ---- free-text notes
+    ws3 = wb.create_sheet("3_Notes")
+    ws3.column_dimensions["A"].width = 45
+    ws3.column_dimensions["B"].width = 100
+    ws3.append(["prompt", "your answer"])
+    for cell in ws3[1]:
+        cell.fill, cell.font = HEAD, Font(bold=True, color="FFFFFF")
+    for prompt in ["Metadata field that HELPED tracing or filtering (which field, which question, how):",
+                   "Metadata LIMITATION you noticed (e.g. page alone on a long page, Z page ranges):",
+                   "Grounding: a case where your score disagreed with auto_hit@3, and why:",
+                   "Anything surprising (optional):"]:
+        ws3.append([prompt, None])
+        r = ws3.max_row
+        ws3.row_dimensions[r].height = 75
+        ws3[f"A{r}"].fill, ws3[f"B{r}"].fill = GREY, YELLOW
+        ws3[f"A{r}"].alignment = ws3[f"B{r}"].alignment = WRAP
+
+    _progress(wb, [("1_Metadata", "C", "P", strategy_order), ("2_Grounding_test", "C", "O", strategy_order)])
+    path.parent.mkdir(parents=True, exist_ok=True)
+    wb.save(path)
+    reuse_m = sum(1 for r in ws.iter_rows(min_row=3, values_only=True) if r[14])
+    reuse_g = sum(1 for r in ws2.iter_rows(min_row=3, values_only=True) if r[13])
+    return {"metadata_rows": n, "metadata_reuse": reuse_m, "grounding_rows": m, "grounding_reuse": reuse_g}

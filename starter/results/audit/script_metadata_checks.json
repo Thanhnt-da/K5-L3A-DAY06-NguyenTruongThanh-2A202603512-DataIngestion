@@ -1,0 +1,404 @@
+{
+  "met001": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met002": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met003": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met004": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met005": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met006": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met010": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met011": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met012": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met013": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met014": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met015": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met018": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met022": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met023": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met024": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met025": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met026": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met027": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met031": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met032": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met033": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met034": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met035": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met036": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met039": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met042": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met043": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met044": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met045": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met046": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met047": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met048": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met052": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met053": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met054": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met055": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met056": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met057": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met060": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met061": {
+    "page_ok": false,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": "range wider than text: does not start on page 341"
+  },
+  "met064": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met065": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met066": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met067": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met068": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met069": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met073": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met074": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met075": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met076": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met078": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met081": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met083": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met085": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met086": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met087": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met088": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met089": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met090": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met092": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met093": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met094": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met096": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met097": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met098": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  },
+  "met099": {
+    "page_ok": true,
+    "chapter_ok": true,
+    "section_ok": true,
+    "note": ""
+  }
+}

@@ -1,0 +1,8 @@
+strategy,split,n,hit_at_1,hit_at_3,page_hit_at_3,filter_questions,filter_compliant,hit_at_1_str,hit_at_3_str,filter_compliance_str
+A,probe,4,0,0,3,0,0,0/4,0/4,N/A
+B,probe,4,0,0,4,0,0,0/4,0/4,N/A
+C,probe,4,0,0,4,0,0,0/4,0/4,N/A
+D,probe,4,0,0,4,0,0,0/4,0/4,N/A
+E,probe,4,0,0,3,0,0,0/4,0/4,N/A
+F,probe,4,0,0,4,0,0,0/4,0/4,N/A
+Z,probe,4,3,4,4,0,0,3/4,4/4,N/A

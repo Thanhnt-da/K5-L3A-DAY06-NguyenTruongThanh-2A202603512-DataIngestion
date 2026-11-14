@@ -1,0 +1,241 @@
+{
+  "coherence": {
+    "A": {
+      "n": 10,
+      "mean": 1.3,
+      "count_0": 0,
+      "count_1": 7,
+      "count_2": 3
+    },
+    "B": {
+      "n": 10,
+      "mean": 1.9,
+      "count_0": 0,
+      "count_1": 1,
+      "count_2": 9
+    },
+    "C": {
+      "n": 10,
+      "mean": 1.9,
+      "count_0": 0,
+      "count_1": 1,
+      "count_2": 9
+    },
+    "D": {
+      "n": 10,
+      "mean": 1.2,
+      "count_0": 4,
+      "count_1": 0,
+      "count_2": 6
+    },
+    "E": {
+      "n": 10,
+      "mean": 1.1,
+      "count_0": 1,
+      "count_1": 7,
+      "count_2": 2
+    },
+    "F": {
+      "n": 10,
+      "mean": 1.9,
+      "count_0": 0,
+      "count_1": 1,
+      "count_2": 9
+    },
+    "Z": {
+      "n": 10,
+      "mean": 1.9,
+      "count_0": 0,
+      "count_1": 1,
+      "count_2": 9
+    }
+  },
+  "coherence_zero_examples": [
+    {
+      "row_id": "coh026",
+      "strategy": "E",
+      "reason": "a Bunch of setup with no conclusion, the chunk also has some sentence from another idea that was cut-off"
+    },
+    {
+      "row_id": "coh039",
+      "strategy": "D",
+      "reason": "the cut-off part suggesting more to the idea, making it less coherance"
+    },
+    {
+      "row_id": "coh046",
+      "strategy": "D",
+      "reason": "Cut off"
+    },
+    {
+      "row_id": "coh060",
+      "strategy": "D",
+      "reason": "The idea is setup, but the actual conclusion is cut off, its in the next part"
+    },
+    {
+      "row_id": "coh067",
+      "strategy": "D",
+      "reason": "This chunk idea got cut-off"
+    }
+  ],
+  "grounding_dev_tiebreak": {
+    "C": {
+      "n": 15,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 15
+    },
+    "F": {
+      "n": 15,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 15
+    },
+    "Z": {
+      "n": 15,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 15
+    }
+  },
+  "metadata_test": {
+    "A": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    },
+    "B": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    },
+    "C": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    },
+    "D": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    },
+    "E": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    },
+    "F": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    },
+    "Z": {
+      "records": 15,
+      "all_correct": 15,
+      "page_ok": 15,
+      "chapter_ok": 15,
+      "section_ok": 15,
+      "all_correct_str": "15/15"
+    }
+  },
+  "metadata_errors": [],
+  "filter_compliance_test_top3": {
+    "A/q20": "1/3 chunks in filter",
+    "B/q20": "1/3 chunks in filter",
+    "C/q20": "3/3 chunks in filter",
+    "D/q20": "0/3 chunks in filter",
+    "E/q20": "1/3 chunks in filter",
+    "F/q20": "1/3 chunks in filter",
+    "Z/q20": "1/3 chunks in filter"
+  },
+  "grounding_test": {
+    "A": {
+      "n": 5,
+      "mean": 1.6,
+      "count_0": 0,
+      "count_1": 2,
+      "count_2": 3
+    },
+    "B": {
+      "n": 5,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 5
+    },
+    "C": {
+      "n": 5,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 5
+    },
+    "D": {
+      "n": 5,
+      "mean": 1.6,
+      "count_0": 1,
+      "count_1": 0,
+      "count_2": 4
+    },
+    "E": {
+      "n": 5,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 5
+    },
+    "F": {
+      "n": 5,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 5
+    },
+    "Z": {
+      "n": 5,
+      "mean": 2.0,
+      "count_0": 0,
+      "count_1": 0,
+      "count_2": 5
+    }
+  },
+  "grounding_test_zero_examples": [
+    {
+      "row_id": "grt032",
+      "strategy": "D",
+      "reason": "D: all 3 chunks are chapter 9 Marx/class conflict text (p288); nothing about women, the household or Engels."
+    }
+  ],
+  "provenance": {
+    "coherence": "human (author)",
+    "grounding_dev": "human (author)",
+    "metadata_test": "page_ok human (66) + script (1); chapter_ok/section_ok script-verified with pypdf",
+    "grounding_test": "Claude LLM judge (results/audit/claude_grounding_labels.json), author to review"
+  },
+  "missing_labels": {
+    "coherence": [],
+    "grounding_dev": [],
+    "metadata": [],
+    "grounding_test": []
+  }
+}
