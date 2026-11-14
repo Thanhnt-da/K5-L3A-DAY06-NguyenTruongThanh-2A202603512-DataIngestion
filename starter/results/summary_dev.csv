@@ -1,0 +1,8 @@
+strategy,split,n,hit_at_1,hit_at_3,page_hit_at_3,filter_questions,filter_compliant,hit_at_1_str,hit_at_3_str,filter_compliance_str
+A,dev,15,3,4,15,2,2,3/15,4/15,2/2
+B,dev,15,10,14,15,2,0,10/15,14/15,0/2
+C,dev,15,11,14,15,2,2,11/15,14/15,2/2
+D,dev,15,7,10,15,2,1,7/15,10/15,1/2
+E,dev,15,8,8,15,2,1,8/15,8/15,1/2
+F,dev,15,11,14,15,2,0,11/15,14/15,0/2
+Z,dev,15,11,14,15,2,0,11/15,14/15,0/2

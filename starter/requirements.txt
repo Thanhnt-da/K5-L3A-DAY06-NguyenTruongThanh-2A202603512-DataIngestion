@@ -2,3 +2,7 @@
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+# Chosen for this project: OpenAI embeddings + PyMuPDF text blocks (cleaner than pypdf on this PDF)
+openai==3.50.0
+pymupdf==2.1
+openpyxl==3.1.5

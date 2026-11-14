@@ -1,0 +1,175 @@
+{
+  "split": "dev",
+  "questions": 15,
+  "model": "text-embedding-3-small",
+  "chosen_before_test": null,
+  "api_tokens": 0,
+  "hybrid_vector_weight": 0.75,
+  "hybrid_weight_source": "tuned on dev",
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "chunk_size": 500,
+      "overlap": 50,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "baseline"
+    },
+    "B": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "A (split rule + size)"
+    },
+    "C": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": true,
+      "compare": "B (metadata filter)"
+    },
+    "D": {
+      "chunking": "paragraph",
+      "chunk_size": 500,
+      "overlap": 0,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "A (split rule, same size) and B (size, same rule)"
+    },
+    "E": {
+      "chunking": "fixed",
+      "chunk_size": 500,
+      "overlap": 150,
+      "scope": "page",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "A (overlap 50 -> 150)"
+    },
+    "F": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "page",
+      "search": "hybrid",
+      "use_filter": false,
+      "compare": "B (hybrid vector + keyword search)"
+    },
+    "Z": {
+      "chunking": "paragraph",
+      "chunk_size": 1000,
+      "overlap": 0,
+      "scope": "section",
+      "search": "vector",
+      "use_filter": false,
+      "compare": "B (chunks may cross page breaks; page range metadata)"
+    }
+  },
+  "summary": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 3,
+      "hit_at_3": 4,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 2,
+      "hit_at_1_str": "3/15",
+      "hit_at_3_str": "4/15",
+      "filter_compliance_str": "2/2"
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 10,
+      "hit_at_3": 14,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 0,
+      "hit_at_1_str": "10/15",
+      "hit_at_3_str": "14/15",
+      "filter_compliance_str": "0/2"
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 14,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 2,
+      "hit_at_1_str": "11/15",
+      "hit_at_3_str": "14/15",
+      "filter_compliance_str": "2/2"
+    },
+    {
+      "strategy": "D",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 7,
+      "hit_at_3": 10,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 1,
+      "hit_at_1_str": "7/15",
+      "hit_at_3_str": "10/15",
+      "filter_compliance_str": "1/2"
+    },
+    {
+      "strategy": "E",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 8,
+      "hit_at_3": 8,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 1,
+      "hit_at_1_str": "8/15",
+      "hit_at_3_str": "8/15",
+      "filter_compliance_str": "1/2"
+    },
+    {
+      "strategy": "F",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 14,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 0,
+      "hit_at_1_str": "11/15",
+      "hit_at_3_str": "14/15",
+      "filter_compliance_str": "0/2"
+    },
+    {
+      "strategy": "Z",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 14,
+      "page_hit_at_3": 15,
+      "filter_questions": 2,
+      "filter_compliant": 0,
+      "hit_at_1_str": "11/15",
+      "hit_at_3_str": "14/15",
+      "filter_compliance_str": "0/2"
+    }
+  ],
+  "python": "3.14.7",
+  "libraries": {
+    "openai": "3.50.0",
+    "psycopg": "3.3.8",
+    "pymupdf": "2.1",
+    "python-dotenv": "1.2.4"
+  },
+  "run_at": "2026-11-14T03:56:11+00:00"
+}

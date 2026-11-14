@@ -1,0 +1,877 @@
+{
+  "corpus_note": "Source PDF is NOT committed to the repo (see .gitignore). Download it from source_url and save it as local_path to reproduce.",
+  "page_numbering": "Page numbers are physical PDF pages, 1-based (page 1 = first page of the file), not the page numbers printed in the book.",
+  "sources": [
+    {
+      "source_id": "openstax-sociology-3e",
+      "title": "Introductory Sociology 3e",
+      "publisher": "OpenStax (hosted on LibreTexts)",
+      "source_url": "https://commons.libretexts.org/book/socialsci-164413",
+      "download": "\"Download PDF\" button on the source_url page",
+      "local_path": "data/Introductory Sociology 3e.pdf",
+      "license_or_permission": "CC BY 4.0 (as listed on the LibreTexts catalog page). Attribution: OpenStax, Introductory Sociology 3e, via LibreTexts. Only the text is used; images may carry separate licenses (see the page's Licensing Stack).",
+      "language": "en",
+      "accessed_at": "2026-11-13",
+      "snapshot": {
+        "file_size_bytes": 29099806,
+        "sha256": "2caab7d76e9f2a2d54ecd9aa6f94287fb1564e9e2a5b4fa38b608f952b36c439",
+        "physical_pages": 752
+      },
+      "chapters_used": [
+        {
+          "chapter": 9,
+          "title": "Social Stratification in the United States",
+          "pdf_pages": "269-300"
+        },
+        {
+          "chapter": 10,
+          "title": "Global Inequality",
+          "pdf_pages": "301-329"
+        },
+        {
+          "chapter": 11,
+          "title": "Race and Ethnicity",
+          "pdf_pages": "330-371"
+        },
+        {
+          "chapter": 12,
+          "title": "Gender, Sex, and Sexuality",
+          "pdf_pages": "372-410"
+        }
+      ],
+      "counting_rule": "Physical PDF pages 269-410 (chapters 9-12) are read. A page counts as content unless it is (a) a chapter title / table-of-contents page, (b) an end-of-chapter study aid (Further Research, Key Terms, References, Section Quiz, Section Summary, Short Answer), or (c) has fewer than 200 characters after removing the page footer, the 'Learning Objectives' sidebar label and the LibreTexts license line. Character counts are of the normalized text (NFKC, whitespace collapsed).",
+      "counted_pages": [
+        {
+          "page": 270,
+          "printed_page": 258,
+          "chapter": 9,
+          "section": "9.1",
+          "chars": 3394
+        },
+        {
+          "page": 271,
+          "printed_page": 259,
+          "chapter": 9,
+          "section": "9.1",
+          "chars": 901
+        },
+        {
+          "page": 272,
+          "printed_page": 260,
+          "chapter": 9,
+          "section": "9.2",
+          "chars": 1262
+        },
+        {
+          "page": 273,
+          "printed_page": 261,
+          "chapter": 9,
+          "section": "9.2",
+          "chars": 2015
+        },
+        {
+          "page": 274,
+          "printed_page": 262,
+          "chapter": 9,
+          "section": "9.2",
+          "chars": 3384
+        },
+        {
+          "page": 275,
+          "printed_page": 263,
+          "chapter": 9,
+          "section": "9.2",
+          "chars": 3377
+        },
+        {
+          "page": 276,
+          "printed_page": 264,
+          "chapter": 9,
+          "section": "9.2",
+          "chars": 3425
+        },
+        {
+          "page": 278,
+          "printed_page": 266,
+          "chapter": 9,
+          "section": "9.3",
+          "chars": 2647
+        },
+        {
+          "page": 279,
+          "printed_page": 267,
+          "chapter": 9,
+          "section": "9.3",
+          "chars": 2603
+        },
+        {
+          "page": 280,
+          "printed_page": 268,
+          "chapter": 9,
+          "section": "9.3",
+          "chars": 2023
+        },
+        {
+          "page": 281,
+          "printed_page": 269,
+          "chapter": 9,
+          "section": "9.3",
+          "chars": 3482
+        },
+        {
+          "page": 282,
+          "printed_page": 270,
+          "chapter": 9,
+          "section": "9.3",
+          "chars": 5369
+        },
+        {
+          "page": 283,
+          "printed_page": 271,
+          "chapter": 9,
+          "section": "9.3",
+          "chars": 4891
+        },
+        {
+          "page": 284,
+          "printed_page": 272,
+          "chapter": 9,
+          "section": "9.4",
+          "chars": 2164
+        },
+        {
+          "page": 285,
+          "printed_page": 273,
+          "chapter": 9,
+          "section": "9.4",
+          "chars": 3729
+        },
+        {
+          "page": 286,
+          "printed_page": 274,
+          "chapter": 9,
+          "section": "9.4",
+          "chars": 599
+        },
+        {
+          "page": 287,
+          "printed_page": 275,
+          "chapter": 9,
+          "section": "9.5",
+          "chars": 3415
+        },
+        {
+          "page": 288,
+          "printed_page": 276,
+          "chapter": 9,
+          "section": "9.5",
+          "chars": 3348
+        },
+        {
+          "page": 289,
+          "printed_page": 277,
+          "chapter": 9,
+          "section": "9.5",
+          "chars": 1048
+        },
+        {
+          "page": 302,
+          "printed_page": 290,
+          "chapter": 10,
+          "section": "10.1",
+          "chars": 2406
+        },
+        {
+          "page": 303,
+          "printed_page": 291,
+          "chapter": 10,
+          "section": "10.2",
+          "chars": 3315
+        },
+        {
+          "page": 304,
+          "printed_page": 292,
+          "chapter": 10,
+          "section": "10.2",
+          "chars": 4364
+        },
+        {
+          "page": 305,
+          "printed_page": 293,
+          "chapter": 10,
+          "section": "10.2",
+          "chars": 4335
+        },
+        {
+          "page": 306,
+          "printed_page": 294,
+          "chapter": 10,
+          "section": "10.2",
+          "chars": 3216
+        },
+        {
+          "page": 307,
+          "printed_page": 295,
+          "chapter": 10,
+          "section": "10.2",
+          "chars": 3676
+        },
+        {
+          "page": 308,
+          "printed_page": 296,
+          "chapter": 10,
+          "section": "10.2",
+          "chars": 3136
+        },
+        {
+          "page": 310,
+          "printed_page": 298,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 2436
+        },
+        {
+          "page": 311,
+          "printed_page": 299,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 3410
+        },
+        {
+          "page": 312,
+          "printed_page": 300,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 5177
+        },
+        {
+          "page": 313,
+          "printed_page": 301,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 3661
+        },
+        {
+          "page": 314,
+          "printed_page": 302,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 3581
+        },
+        {
+          "page": 315,
+          "printed_page": 303,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 3492
+        },
+        {
+          "page": 316,
+          "printed_page": 304,
+          "chapter": 10,
+          "section": "10.3",
+          "chars": 1359
+        },
+        {
+          "page": 317,
+          "printed_page": 305,
+          "chapter": 10,
+          "section": "10.4",
+          "chars": 3622
+        },
+        {
+          "page": 318,
+          "printed_page": 306,
+          "chapter": 10,
+          "section": "10.4",
+          "chars": 1370
+        },
+        {
+          "page": 331,
+          "printed_page": 319,
+          "chapter": 11,
+          "section": "11.1",
+          "chars": 2725
+        },
+        {
+          "page": 332,
+          "printed_page": 320,
+          "chapter": 11,
+          "section": "11.2",
+          "chars": 4310
+        },
+        {
+          "page": 333,
+          "printed_page": 321,
+          "chapter": 11,
+          "section": "11.2",
+          "chars": 5484
+        },
+        {
+          "page": 334,
+          "printed_page": 322,
+          "chapter": 11,
+          "section": "11.2",
+          "chars": 2031
+        },
+        {
+          "page": 335,
+          "printed_page": 323,
+          "chapter": 11,
+          "section": "11.3",
+          "chars": 3886
+        },
+        {
+          "page": 336,
+          "printed_page": 324,
+          "chapter": 11,
+          "section": "11.3",
+          "chars": 3092
+        },
+        {
+          "page": 338,
+          "printed_page": 326,
+          "chapter": 11,
+          "section": "11.4",
+          "chars": 3029
+        },
+        {
+          "page": 339,
+          "printed_page": 327,
+          "chapter": 11,
+          "section": "11.4",
+          "chars": 3762
+        },
+        {
+          "page": 340,
+          "printed_page": 328,
+          "chapter": 11,
+          "section": "11.4",
+          "chars": 5390
+        },
+        {
+          "page": 341,
+          "printed_page": 329,
+          "chapter": 11,
+          "section": "11.4",
+          "chars": 3049
+        },
+        {
+          "page": 342,
+          "printed_page": 330,
+          "chapter": 11,
+          "section": "11.4",
+          "chars": 2050
+        },
+        {
+          "page": 343,
+          "printed_page": 331,
+          "chapter": 11,
+          "section": "11.5",
+          "chars": 2225
+        },
+        {
+          "page": 344,
+          "printed_page": 332,
+          "chapter": 11,
+          "section": "11.5",
+          "chars": 4919
+        },
+        {
+          "page": 345,
+          "printed_page": 333,
+          "chapter": 11,
+          "section": "11.5",
+          "chars": 3714
+        },
+        {
+          "page": 347,
+          "printed_page": 335,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 3664
+        },
+        {
+          "page": 348,
+          "printed_page": 336,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 3196
+        },
+        {
+          "page": 349,
+          "printed_page": 337,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 4585
+        },
+        {
+          "page": 350,
+          "printed_page": 338,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 4655
+        },
+        {
+          "page": 351,
+          "printed_page": 339,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 3144
+        },
+        {
+          "page": 352,
+          "printed_page": 340,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 3499
+        },
+        {
+          "page": 353,
+          "printed_page": 341,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 2891
+        },
+        {
+          "page": 354,
+          "printed_page": 342,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 4588
+        },
+        {
+          "page": 355,
+          "printed_page": 343,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 3682
+        },
+        {
+          "page": 356,
+          "printed_page": 344,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 4765
+        },
+        {
+          "page": 357,
+          "printed_page": 345,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 3238
+        },
+        {
+          "page": 358,
+          "printed_page": 346,
+          "chapter": 11,
+          "section": "11.6",
+          "chars": 411
+        },
+        {
+          "page": 373,
+          "printed_page": 361,
+          "chapter": 12,
+          "section": "12.1",
+          "chars": 2872
+        },
+        {
+          "page": 374,
+          "printed_page": 362,
+          "chapter": 12,
+          "section": "12.1",
+          "chars": 1251
+        },
+        {
+          "page": 375,
+          "printed_page": 363,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 3158
+        },
+        {
+          "page": 376,
+          "printed_page": 364,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 5713
+        },
+        {
+          "page": 377,
+          "printed_page": 365,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 4209
+        },
+        {
+          "page": 378,
+          "printed_page": 366,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 3848
+        },
+        {
+          "page": 379,
+          "printed_page": 367,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 3654
+        },
+        {
+          "page": 380,
+          "printed_page": 368,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 4170
+        },
+        {
+          "page": 381,
+          "printed_page": 369,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 5993
+        },
+        {
+          "page": 382,
+          "printed_page": 370,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 3641
+        },
+        {
+          "page": 383,
+          "printed_page": 371,
+          "chapter": 12,
+          "section": "12.2",
+          "chars": 1875
+        },
+        {
+          "page": 384,
+          "printed_page": 372,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 2301
+        },
+        {
+          "page": 385,
+          "printed_page": 373,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 4053
+        },
+        {
+          "page": 386,
+          "printed_page": 374,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 4502
+        },
+        {
+          "page": 387,
+          "printed_page": 375,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 2099
+        },
+        {
+          "page": 388,
+          "printed_page": 376,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 3113
+        },
+        {
+          "page": 389,
+          "printed_page": 377,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 4136
+        },
+        {
+          "page": 390,
+          "printed_page": 378,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 3590
+        },
+        {
+          "page": 391,
+          "printed_page": 379,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 4637
+        },
+        {
+          "page": 392,
+          "printed_page": 380,
+          "chapter": 12,
+          "section": "12.3",
+          "chars": 1645
+        },
+        {
+          "page": 393,
+          "printed_page": 381,
+          "chapter": 12,
+          "section": "12.4",
+          "chars": 2518
+        },
+        {
+          "page": 394,
+          "printed_page": 382,
+          "chapter": 12,
+          "section": "12.4",
+          "chars": 5631
+        },
+        {
+          "page": 395,
+          "printed_page": 383,
+          "chapter": 12,
+          "section": "12.4",
+          "chars": 4809
+        },
+        {
+          "page": 396,
+          "printed_page": 384,
+          "chapter": 12,
+          "section": "12.4",
+          "chars": 4299
+        }
+      ],
+      "excluded_pages": [
+        {
+          "page": 269,
+          "reason": "chapter title / table-of-contents page"
+        },
+        {
+          "page": 277,
+          "reason": "fewer than 200 chars after removing footer/license"
+        },
+        {
+          "page": 290,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 291,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 292,
+          "reason": "end-of-chapter study aid: Section Summary"
+        },
+        {
+          "page": 293,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 294,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 295,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 296,
+          "reason": "end-of-chapter study aid: Short Answer"
+        },
+        {
+          "page": 297,
+          "reason": "end-of-chapter study aid: Short Answer"
+        },
+        {
+          "page": 298,
+          "reason": "end-of-chapter study aid: Further Research"
+        },
+        {
+          "page": 299,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 300,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 301,
+          "reason": "chapter title / table-of-contents page"
+        },
+        {
+          "page": 309,
+          "reason": "fewer than 200 chars after removing footer/license"
+        },
+        {
+          "page": 319,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 320,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 321,
+          "reason": "end-of-chapter study aid: Section Summary"
+        },
+        {
+          "page": 322,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 323,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 324,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 325,
+          "reason": "end-of-chapter study aid: Short Answer"
+        },
+        {
+          "page": 326,
+          "reason": "end-of-chapter study aid: Further Research"
+        },
+        {
+          "page": 327,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 328,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 329,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 330,
+          "reason": "chapter title / table-of-contents page"
+        },
+        {
+          "page": 337,
+          "reason": "fewer than 200 chars after removing footer/license"
+        },
+        {
+          "page": 346,
+          "reason": "fewer than 200 chars after removing footer/license"
+        },
+        {
+          "page": 359,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 360,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 361,
+          "reason": "end-of-chapter study aid: Section Summary"
+        },
+        {
+          "page": 362,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 363,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 364,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 365,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 366,
+          "reason": "end-of-chapter study aid: Short Answer"
+        },
+        {
+          "page": 367,
+          "reason": "end-of-chapter study aid: Further Research"
+        },
+        {
+          "page": 368,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 369,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 370,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 371,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 372,
+          "reason": "chapter title / table-of-contents page"
+        },
+        {
+          "page": 397,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 398,
+          "reason": "end-of-chapter study aid: Key Terms"
+        },
+        {
+          "page": 399,
+          "reason": "end-of-chapter study aid: Section Summary"
+        },
+        {
+          "page": 400,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 401,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 402,
+          "reason": "end-of-chapter study aid: Section Quiz"
+        },
+        {
+          "page": 403,
+          "reason": "end-of-chapter study aid: Short Answer"
+        },
+        {
+          "page": 404,
+          "reason": "end-of-chapter study aid: Further Research"
+        },
+        {
+          "page": 405,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 406,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 407,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 408,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 409,
+          "reason": "end-of-chapter study aid: References"
+        },
+        {
+          "page": 410,
+          "reason": "end-of-chapter study aid: References"
+        }
+      ],
+      "char_counts": {
+        "total_counted_chars": 285333,
+        "min_page_chars": 411
+      },
+      "counted_pages_total": 85
+    }
+  ]
+}

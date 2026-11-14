@@ -1,0 +1,85 @@
+{
+  "rule": "Content pages sorted by page; pages at positions round(i*N/10), i=0..9 (N=85 content pages). Anchor = first sentence (>=60 chars) of the first paragraph >=150 chars on that page (captions/objectives skipped). Chosen mechanically, not by looking at scores.",
+  "anchors": [
+    {
+      "anchor_id": "c01",
+      "page": 270,
+      "printed_page": 258,
+      "chapter": 9,
+      "section": "9.1",
+      "anchor_sentence": "Jarrett grew up on a farm in rural Ohio, left home to serve in the Army, and returned a few years later to take over the family farm."
+    },
+    {
+      "anchor_id": "c02",
+      "page": 279,
+      "printed_page": 267,
+      "chapter": 9,
+      "section": "9.3",
+      "anchor_sentence": "The upper class is considered the top, and only the powerful elite get to see the view from there."
+    },
+    {
+      "anchor_id": "c03",
+      "page": 288,
+      "printed_page": 276,
+      "chapter": 9,
+      "section": "9.5",
+      "anchor_sentence": "Conflict theorists are deeply critical of social stratification, asserting that it benefits only some people, not all of society."
+    },
+    {
+      "anchor_id": "c04",
+      "page": 310,
+      "printed_page": 298,
+      "chapter": 10,
+      "section": "10.3",
+      "anchor_sentence": "Does it mean being a single mother with two kids in New York City, waiting for the next paycheck in order to buy groceries?"
+    },
+    {
+      "anchor_id": "c05",
+      "page": 318,
+      "printed_page": 306,
+      "chapter": 10,
+      "section": "10.4",
+      "anchor_sentence": "The book Factory Girls: From Village to City in Changing China, by Leslie T."
+    },
+    {
+      "anchor_id": "c06",
+      "page": 339,
+      "printed_page": 327,
+      "chapter": 11,
+      "section": "11.4",
+      "anchor_sentence": "in which any bit of supporting evidence gives a person more confidence in their belief."
+    },
+    {
+      "anchor_id": "c07",
+      "page": 349,
+      "printed_page": 337,
+      "chapter": 11,
+      "section": "11.6",
+      "anchor_sentence": "group, American Indian Cultural Support (AICS), is especially concerned with the use of such names at K–12 schools, influencing children when they should be gaining a fuller and more realistic understanding of Native Americans than such stereotypes supply."
+    },
+    {
+      "anchor_id": "c08",
+      "page": 358,
+      "printed_page": 346,
+      "chapter": 11,
+      "section": "11.6",
+      "anchor_sentence": "SB 1070 has been the subject of many lawsuits, from parties as diverse as Arizona police officers, the American Civil Liberties Union, and even the federal government, which is suing on the basis of Arizona contradicting federal immigration laws (ACLU 2011)."
+    },
+    {
+      "anchor_id": "c09",
+      "page": 380,
+      "printed_page": 368,
+      "chapter": 12,
+      "section": "12.2",
+      "anchor_sentence": "designers have different interpretation of the transgender flag, and other groups within the LGBTQ community have their own flags and symbols."
+    },
+    {
+      "anchor_id": "c10",
+      "page": 388,
+      "printed_page": 376,
+      "chapter": 12,
+      "section": "12.3",
+      "anchor_sentence": "This evidence points to levels of discrimination that go beyond behaviors by individual companies or organizations."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "split_used": "dev",
+  "rule": "max Hit@3, then Hit@1, then closest to 0.5",
+  "grid": [
+    {
+      "vector_weight": 0.0,
+      "dev_hit_at_3": 12,
+      "dev_hit_at_1": 12,
+      "n": 15
+    },
+    {
+      "vector_weight": 0.25,
+      "dev_hit_at_3": 13,
+      "dev_hit_at_1": 12,
+      "n": 15
+    },
+    {
+      "vector_weight": 0.5,
+      "dev_hit_at_3": 13,
+      "dev_hit_at_1": 12,
+      "n": 15
+    },
+    {
+      "vector_weight": 0.75,
+      "dev_hit_at_3": 14,
+      "dev_hit_at_1": 11,
+      "n": 15
+    },
+    {
+      "vector_weight": 1.0,
+      "dev_hit_at_3": 14,
+      "dev_hit_at_1": 10,
+      "n": 15
+    }
+  ],
+  "chosen_vector_weight": 0.75,
+  "note": "F's dev score is optimistic because the weight was chosen on dev",
+  "python": "3.14.7",
+  "libraries": {
+    "openai": "3.50.0",
+    "psycopg": "3.3.8",
+    "pymupdf": "2.1",
+    "python-dotenv": "1.2.4"
+  },
+  "run_at": "2026-11-14T03:55:54+00:00"
+}
