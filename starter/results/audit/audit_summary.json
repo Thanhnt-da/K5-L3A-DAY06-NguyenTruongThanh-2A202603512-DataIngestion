@@ -151,14 +151,25 @@
     },
     "Z": {
       "records": 15,
-      "all_correct": 15,
-      "page_ok": 15,
+      "all_correct": 14,
+      "page_ok": 14,
       "chapter_ok": 15,
       "section_ok": 15,
-      "all_correct_str": "15/15"
+      "all_correct_str": "14/15"
     }
   },
-  "metadata_errors": [],
+  "metadata_errors": [
+    {
+      "row_id": "met061",
+      "qid": "q18",
+      "strategy": "Z",
+      "pages": "341-342",
+      "page_ok": "❌",
+      "chapter_ok": "✅",
+      "section_ok": "✅",
+      "notes": "Range p341-342 is wider than the text (text only on p342). Author first marked ✅, changed to ❌ after reviewing the script check."
+    }
+  ],
   "filter_compliance_test_top3": {
     "A/q20": "1/3 chunks in filter",
     "B/q20": "1/3 chunks in filter",

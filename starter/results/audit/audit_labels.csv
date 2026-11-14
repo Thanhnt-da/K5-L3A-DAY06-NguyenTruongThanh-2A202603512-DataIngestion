@@ -174,7 +174,7 @@ metadata,met057,E,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section
 metadata,met058,F,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
 metadata,met059,F,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
 metadata,met060,F,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
-metadata,met061,Z,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",SCRIPT DISAGREES with human page_ok=✅: range wider than text: does not start on page 341 - author to review,page_ok: human; chapter_ok/section_ok: script (pypdf)
+metadata,met061,Z,q18,"{""page_ok"": ""❌"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}","Range p341-342 is wider than the text (text only on p342). Author first marked ✅, changed to ❌ after reviewing the script check.",page_ok: human (revised after script check); chapter_ok/section_ok: script (pypdf)
 metadata,met062,Z,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
 metadata,met063,Z,q18,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
 metadata,met064,A,q19,"{""page_ok"": ""✅"", ""chapter_ok"": ""✅"", ""section_ok"": ""✅""}",,page_ok: human; chapter_ok/section_ok: script (pypdf)
